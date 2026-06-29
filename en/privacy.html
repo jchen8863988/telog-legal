@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy · Telog Archive (TeLog)</title>
+  <meta name="description" content="TeLog Privacy Policy: local-first storage, Tesla China Fleet API, Amap compliance, TeslaMate open-source reference, and PIPL." />
+  <link rel="canonical" href="https://www.familymedvault.com/telog/privacy" />
+  <link rel="alternate" hreflang="en" href="https://www.familymedvault.com/telog/privacy" />
+  <link rel="alternate" hreflang="zh-CN" href="https://www.familymedvault.com/zh/telog/privacy" />
+  <style>
+    :root {
+      --fg: #0f172a; --muted: #64748b; --accent: #0f766e; --border: #e2e8f0;
+      --warn-bg: #fffbeb; --warn-border: #fde68a; --card-bg: #f0fdfa; --soft: #f8fafc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7; color: var(--fg); margin: 0; background: #fff;
+    }
+    main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    .brand { font-size: 0.875rem; font-weight: 600; color: var(--accent); }
+    h1 { font-size: 1.875rem; margin: 0.5rem 0 0; }
+    .updated { font-size: 0.875rem; color: var(--muted); margin-top: 0.5rem; }
+    .notice, .legal {
+      border-radius: 0.75rem; padding: 1rem 1.125rem; font-size: 0.875rem; margin: 1.75rem 0;
+    }
+    .notice { background: var(--warn-bg); border: 1px solid var(--warn-border); }
+    .legal { background: var(--soft); border: 1px solid var(--border); color: var(--muted); }
+    section { margin-top: 2.25rem; }
+    h2 { font-size: 1.2rem; margin: 0 0 0.75rem; }
+    h3 { font-size: 1rem; margin: 1.125rem 0 0.35rem; }
+    p, li { font-size: 0.9375rem; }
+    ul, ol { padding-left: 1.25rem; }
+    li { margin: 0.4rem 0; }
+    a { color: var(--accent); }
+    .contact-box {
+      background: var(--card-bg); border: 1px solid #99f6e4;
+      border-radius: 0.75rem; padding: 1rem 1.125rem; font-size: 0.9375rem;
+    }
+    .tip, .fleet-box, .ref-box {
+      background: var(--soft); border: 1px solid var(--border);
+      border-radius: 0.625rem; padding: 0.875rem 1rem; font-size: 0.875rem;
+      color: var(--muted); margin-top: 0.75rem;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.8125rem; margin-top: 0.75rem; }
+    th, td { border: 1px solid var(--border); padding: 0.5rem 0.625rem; text-align: left; vertical-align: top; }
+    th { background: var(--soft); font-weight: 600; }
+    code { font-size: 0.8125rem; background: #e2e8f0; padding: 0.1em 0.35em; border-radius: 4px; word-break: break-all; }
+    footer {
+      margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+      font-size: 0.75rem; color: var(--muted); line-height: 1.65;
+    }
+    .toc { font-size: 0.875rem; background: var(--soft); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1rem 1.25rem; }
+    .toc ol { margin: 0.5rem 0 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="brand">Telog Archive (TeLog) · A FamilyMedVault app</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Effective: June 28, 2026 · Version 1.0.0</p>
+
+    <p class="notice">
+      This Privacy Policy applies to the <strong>Telog Archive (TeLog)</strong> iOS app and minimal backend services.
+      The operator is an <strong>individual developer</strong> using familymedvault.com for legal hosting and a token proxy.
+      By using TeLog, you agree to this Policy and our Terms of Use.
+    </p>
+
+    <nav class="toc" aria-label="Contents">
+      <strong>Contents</strong>
+      <ol>
+        <li><a href="#s1">Operator &amp; scope</a></li>
+        <li><a href="#s2">TeslaMate open-source reference</a></li>
+        <li><a href="#s3">China compliance principles</a></li>
+        <li><a href="#s4">Tesla China Fleet API data flow</a></li>
+        <li><a href="#s5">Amap (Gaode) compliance</a></li>
+        <li><a href="#s6">Personal information we process</a></li>
+        <li><a href="#s7">Purposes &amp; legal bases</a></li>
+        <li><a href="#s8">Local-first &amp; optional cloud</a></li>
+        <li><a href="#s9">Retention &amp; location</a></li>
+        <li><a href="#s10">Third parties</a></li>
+        <li><a href="#s11">Subscriptions &amp; Apple</a></li>
+        <li><a href="#s12">Your rights</a></li>
+        <li><a href="#s13">Children</a></li>
+        <li><a href="#s14">Security</a></li>
+        <li><a href="#s15">Cross-border transfers</a></li>
+        <li><a href="#s16">Updates</a></li>
+        <li><a href="#s17">Contact</a></li>
+        <li><a href="#s18">Disclaimer</a></li>
+      </ol>
+    </nav>
+
+    <section id="s1">
+      <h2>1. Operator &amp; scope</h2>
+      <ul>
+        <li><strong>App:</strong> Telog Archive (TeLog) · Bundle ID <code>com.jchen.Telog</code></li>
+        <li><strong>Operator:</strong> individual developer (not Tesla or Apple)</li>
+        <li><strong>Email:</strong> <a href="mailto:telog@familymedvault.com">telog@familymedvault.com</a></li>
+        <li><strong>Brand:</strong> standalone app under FamilyMedVault; separate from the main FamilyMedVault web product by default</li>
+        <li><strong>Region:</strong> designed for Mainland China Tesla owners; PIPL and related laws apply</li>
+      </ul>
+    </section>
+
+    <section id="s2">
+      <h2>2. TeslaMate open-source reference</h2>
+      <div class="ref-box">
+        <p>
+          TeLog <strong>references</strong> the open-source project
+          <strong>TeslaMate</strong> (<a href="https://github.com/teslamate-org/teslamate" target="_blank" rel="noopener noreferrer">teslamate-org/teslamate</a>)
+          for data models, local logging patterns, dashboard concepts, and geocoding fallbacks.
+        </p>
+        <ul>
+          <li>TeLog is an <strong>independently developed mobile app</strong>, not an official TeslaMate client or hosted TeslaMate distribution.</li>
+          <li>Mainland China features (auth.tesla.cn, Amap, encrypted SQLite, optional cloud collection, App Store subscriptions) are <strong>independent implementations</strong>.</li>
+          <li>We use open-source materials only as permitted by their licenses. UI, premium reports, and cloud architecture are separate.</li>
+          <li>TeslaMate names belong to their owners; mention here is for technical attribution only.</li>
+        </ul>
+      </div>
+      <p class="tip">Referencing TeslaMate does <strong>not</strong> send your data to TeslaMate or community servers. By default, data stays on <strong>your iPhone</strong>.</p>
+    </section>
+
+    <section id="s3">
+      <h2>3. China compliance principles</h2>
+      <ul>
+        <li>Lawful, legitimate, necessary processing — no excessive collection</li>
+        <li>Local-first by default; cloud upload and family location share require <strong>separate consent</strong></li>
+        <li>Optional cloud copies stored in <strong>mainland China</strong></li>
+        <li>Vehicle data via Tesla&apos;s official China developer portal — no unofficial scraping APIs</li>
+        <li>Maps via <strong>Amap Open Platform</strong> with properly applied Keys (see §5)</li>
+        <li>No ad SDKs, no sale of personal information, no cross-app tracking for ads</li>
+      </ul>
+    </section>
+
+    <section id="s4">
+      <h2>4. Tesla China Fleet API data flow</h2>
+      <table>
+        <thead>
+          <tr><th>Step</th><th>Description</th><th>Vehicle telemetry via our servers?</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Developer registration</td><td>App registered on <a href="https://developer.tesla.cn/" target="_blank" rel="noopener noreferrer">developer.tesla.cn</a></td><td>—</td></tr>
+          <tr><td>Owner consent</td><td>You authorize on <code>auth.tesla.cn</code></td><td>No</td></tr>
+          <tr><td>Token exchange</td><td>OAuth code/refresh via <code>familymedvault.com/api/telog/token</code>; <code>client_secret</code> server-side only</td><td>Tokens only</td></tr>
+          <tr><td>Vehicle pull</td><td>App calls <code>fleet-api.prd.cn.vn.cloud.tesla.cn</code> <strong>directly</strong></td><td><strong>No</strong></td></tr>
+          <tr><td>Local processing</td><td>SQLite on your iPhone by default</td><td>No</td></tr>
+          <tr><td>Optional cloud collect</td><td>After separate consent; mainland China storage</td><td>Yes (optional)</td></tr>
+        </tbody>
+      </table>
+      <p>We never collect your Tesla password. Scopes typically include <code>vehicle_device_data</code>, <code>vehicle_location</code>, and command scopes only when you use those features.</p>
+    </section>
+
+    <section id="s5">
+      <h2>5. Amap (Gaode) compliance</h2>
+      <p>
+        For lawful map display and reverse geocoding in China, TeLog uses
+        <strong>Amap Open Platform</strong> (<a href="https://lbs.amap.com/" target="_blank" rel="noopener noreferrer">lbs.amap.com</a>)
+        under PRC surveying and map regulations.
+      </p>
+      <ul>
+        <li>Keys are applied through a <strong>registered developer account</strong> on the official platform, scoped to permitted service types (Web JS API for maps; Web Service API for reverse geocoding).</li>
+        <li>We use WebView + REST (not the native iOS SDK), matching Key types.</li>
+        <li>Data sent to Amap may include GCJ-02 coordinates and map viewport parameters — <strong>not</strong> your Tesla password or full trip database.</li>
+        <li><strong>Fallback:</strong> if Amap is unavailable, coordinates may be sent to <strong>OpenStreetMap Nominatim</strong> (outside China) when allowed in settings.</li>
+      </ul>
+      <p>Amap privacy: <a href="https://lbs.amap.com/pages/privacy/" target="_blank" rel="noopener noreferrer">Amap Privacy Policy</a></p>
+    </section>
+
+    <section id="s6">
+      <h2>6. Personal information we process</h2>
+      <p>Categories include: Tesla OAuth identifiers, VIN, trips, GPS tracks, charging records, geofences, addresses, optional cloud copies, family-share invites, and support emails you send us.</p>
+      <p class="tip"><strong>We do not collect:</strong> contacts, full photo library (unless you export/share), biometrics, payment cards (Apple handles billing), or ad profiling IDs.</p>
+    </section>
+
+    <section id="s7">
+      <h2>7. Purposes &amp; legal bases</h2>
+      <p>Core archiving, maps, optional cloud, family location share, subscriptions, security, and support — under contract, consent (including separate consent for sensitive processing), legal obligation, or legitimate interests as applicable under PIPL.</p>
+      <p>We do not use your data for unrelated marketing or sell personal information.</p>
+    </section>
+
+    <section id="s8">
+      <h2>8. Local-first &amp; optional cloud</h2>
+      <p><strong>Default:</strong> Fleet API data stays in encrypted SQLite on your device.</p>
+      <p><strong>Cloud collection (TeLog Plus):</strong> only after separate disclosure consent — 24/7 gap-fill, backup, sync; stored in mainland China; deleted on server when you turn it off; local data remains.</p>
+      <p><strong>Family location share:</strong> separate consent before invited members can view live vehicle location.</p>
+    </section>
+
+    <section id="s9">
+      <h2>9. Retention &amp; location</h2>
+      <ul>
+        <li>On-device: until you delete or uninstall</li>
+        <li>Cloud copies: mainland China; default 365-day rolling retention; deleted when cloud is disabled</li>
+        <li>Support email: typically up to 24 months</li>
+      </ul>
+    </section>
+
+    <section id="s10">
+      <h2>10. Third parties</h2>
+      <p>Tesla China Fleet API, Apple App Store/StoreKit, Amap, mainland cloud providers (token proxy &amp; optional cloud), optional Nominatim, and services you configure (MQTT, etc.). Each has its own terms.</p>
+    </section>
+
+    <section id="s11">
+      <h2>11. Subscriptions &amp; Apple</h2>
+      <p>TeLog Plus (<code>com.jchen.Telog.plus.monthly</code> / <code>yearly</code>) is billed by Apple. We do not receive your card number. Entitlements unlock cloud features.</p>
+    </section>
+
+    <section id="s12">
+      <h2>12. Your rights</h2>
+      <p>Access, copy, correct, delete, withdraw consent, complain to regulators, or litigate — contact <a href="mailto:telog@familymedvault.com?subject=Privacy%20request">telog@familymedvault.com</a> (subject &quot;Privacy request&quot;). We respond within <strong>15 business days</strong> where required.</p>
+      <p>In-app: Settings → Privacy &amp; data (export JSON, wipe local, revoke cloud).</p>
+    </section>
+
+    <section id="s13">
+      <h2>13. Children</h2>
+      <p>Not directed at children under 14. Contact us to delete mistaken collection.</p>
+    </section>
+
+    <section id="s14">
+      <h2>14. Security</h2>
+      <p>Encrypted local storage, HTTPS, server-side client_secret, encrypted cloud copies, least-privilege OAuth scopes, breach notification as required by law.</p>
+    </section>
+
+    <section id="s15">
+      <h2>15. Cross-border transfers</h2>
+      <p>Default vehicle archives stay on your device in China. Optional cloud stays in mainland China. Exceptions: Apple/Tesla API calls, Amap in China, optional Nominatim fallback abroad, emails you send us.</p>
+    </section>
+
+    <section id="s16">
+      <h2>16. Updates</h2>
+      <p>We may update this Policy with a new effective date. Material changes will be notified in-app. Continued use means acceptance.</p>
+    </section>
+
+    <section id="s17">
+      <h2>17. Contact</h2>
+      <div class="contact-box">
+        <p><strong>Email:</strong> <a href="mailto:telog@familymedvault.com">telog@familymedvault.com</a></p>
+        <p><strong>Support:</strong> <a href="support.html">Technical Support</a></p>
+        <p><strong>App Store Privacy Policy URL:</strong><br />
+          <code>https://www.familymedvault.com/telog/privacy</code></p>
+      </div>
+    </section>
+
+    <section id="s18">
+      <h2>18. Disclaimer (individual developer)</h2>
+      <div class="legal">
+        <p>Third-party policy changes, force majeure, and informational battery/resale reports (not professional advice). Not legal advice. Non-waivable liability still applies where required by law.</p>
+      </div>
+    </section>
+
+    <p>中文: <a href="../zh/privacy.html">隐私政策（中文）</a> · <a href="terms.html">Terms of Use</a> · <a href="support.html">Support</a></p>
+
+    <footer>
+      <p>Telog Archive (TeLog) · Not affiliated with Tesla or TeslaMate officially · © 2026 TeLog</p>
+    </footer>
+  </main>
+</body>
+</html>

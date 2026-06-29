@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Technical Support · Telog Archive (TeLog)</title>
+  <meta name="description" content="Official TeLog technical support: contact email, Tesla China Fleet API, TeLog Plus subscriptions, data export/deletion, and FAQ. Operated by an individual developer." />
+  <link rel="canonical" href="https://www.familymedvault.com/telog/support" />
+  <link rel="alternate" hreflang="en" href="https://www.familymedvault.com/telog/support" />
+  <link rel="alternate" hreflang="zh-CN" href="https://www.familymedvault.com/zh/telog/support" />
+  <style>
+    :root {
+      --fg: #0f172a; --muted: #64748b; --accent: #0f766e; --border: #e2e8f0;
+      --warn-bg: #fffbeb; --warn-border: #fde68a; --card-bg: #f0fdfa; --soft: #f8fafc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7; color: var(--fg); margin: 0; background: #fff;
+    }
+    main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    .brand { font-size: 0.875rem; font-weight: 600; color: var(--accent); }
+    h1 { font-size: 1.875rem; margin: 0.5rem 0 0; line-height: 1.25; }
+    .updated { font-size: 0.875rem; color: var(--muted); margin-top: 0.5rem; }
+    .notice, .legal {
+      border-radius: 0.75rem; padding: 1rem 1.125rem; font-size: 0.875rem; margin: 1.75rem 0;
+    }
+    .notice { background: var(--warn-bg); border: 1px solid var(--warn-border); }
+    .legal { background: var(--soft); border: 1px solid var(--border); color: var(--muted); }
+    section { margin-top: 2.25rem; }
+    h2 { font-size: 1.2rem; margin: 0 0 0.75rem; }
+    h3 { font-size: 1rem; margin: 1.125rem 0 0.35rem; }
+    p, li { font-size: 0.9375rem; }
+    ul, ol { padding-left: 1.25rem; }
+    li { margin: 0.4rem 0; }
+    a { color: var(--accent); }
+    .contact-box {
+      background: var(--card-bg); border: 1px solid #99f6e4;
+      border-radius: 0.75rem; padding: 1rem 1.125rem; font-size: 0.9375rem;
+    }
+    .tip, .fleet-box, .tier-box {
+      background: var(--soft); border: 1px solid var(--border);
+      border-radius: 0.625rem; padding: 0.875rem 1rem; font-size: 0.875rem;
+      color: var(--muted); margin-top: 0.75rem;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.8125rem; margin-top: 0.75rem; }
+    th, td { border: 1px solid var(--border); padding: 0.5rem 0.625rem; text-align: left; vertical-align: top; }
+    th { background: var(--soft); font-weight: 600; }
+    code { font-size: 0.8125rem; background: #e2e8f0; padding: 0.1em 0.35em; border-radius: 4px; word-break: break-all; }
+    footer {
+      margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+      font-size: 0.75rem; color: var(--muted); line-height: 1.65;
+    }
+    .lang { margin-top: 1.5rem; font-size: 0.875rem; }
+    .toc { font-size: 0.875rem; background: var(--soft); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1rem 1.25rem; }
+    .toc ol { margin: 0.5rem 0 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="brand">Telog Archive (TeLog) · A FamilyMedVault app</p>
+    <h1>Technical Support</h1>
+    <p class="updated">Last updated: June 28, 2026 · Version 1.0.0</p>
+
+    <p class="notice">
+      This is the <strong>official technical support page</strong> for <strong>Telog Archive (TeLog)</strong>.
+      Use it for the App Store <em>Support URL</em> and user self-service.
+      It describes features, data practices, subscriptions, and contact details, and reflects transparency obligations under applicable law in the People&apos;s Republic of China.
+      <strong>Not formal legal advice.</strong> See the Privacy Policy and Terms of Use for binding terms.
+    </p>
+
+    <nav class="toc" aria-label="Contents">
+      <strong>Contents</strong>
+      <ol>
+        <li><a href="#s1">Product &amp; operator</a></li>
+        <li><a href="#s2">Contact</a></li>
+        <li><a href="#s3">In-app support paths</a></li>
+        <li><a href="#s4">First launch &amp; consent</a></li>
+        <li><a href="#s5">Tesla China Fleet API</a></li>
+        <li><a href="#s6">Data storage, export &amp; deletion</a></li>
+        <li><a href="#s7">TeLog Plus subscriptions</a></li>
+        <li><a href="#s8">Optional cloud features</a></li>
+        <li><a href="#s9">Family sharing</a></li>
+        <li><a href="#s10">Support scope</a></li>
+        <li><a href="#s11">What to include in tickets</a></li>
+        <li><a href="#s12">FAQ</a></li>
+        <li><a href="#s13">Third-party services</a></li>
+        <li><a href="#s14">Compliance (China)</a></li>
+        <li><a href="#s15">Limitation of liability</a></li>
+        <li><a href="#s16">Related documents</a></li>
+      </ol>
+    </nav>
+
+    <section id="s1">
+      <h2>1. Product &amp; operator</h2>
+      <ul>
+        <li><strong>TeLog</strong> is a <strong>standalone iOS app</strong> under the FamilyMedVault brand for Mainland China Tesla owners: lifetime vehicle records, drives, charging, battery insights, PDF export, and share posters.</li>
+        <li>Separate from the main FamilyMedVault web product (family health records, etc.). Vehicle data stays on your phone <strong>by default</strong> unless you opt into optional cloud features.</li>
+        <li><strong>Not affiliated with Tesla, Inc.</strong> Tesla names and marks are used only to describe compatibility.</li>
+        <li>The operator registered a third-party app on Tesla&apos;s official China developer portal
+          (<a href="https://developer.tesla.cn/" target="_blank" rel="noopener noreferrer">developer.tesla.cn</a>)
+          and reads vehicle data via Fleet API only after <strong>you</strong> authorize on <code>auth.tesla.cn</code>.</li>
+        <li>Operated by an <strong>individual developer</strong> using familymedvault.com for legal hosting and minimal backend services.</li>
+        <li>Current release supports <strong>Mainland China Tesla accounts</strong> only.</li>
+      </ul>
+    </section>
+
+    <section id="s2">
+      <h2>2. Contact</h2>
+      <div class="contact-box">
+        <p><strong>Email:</strong>
+          <a href="mailto:telog@familymedvault.com?subject=TeLog%20technical%20support">telog@familymedvault.com</a>
+        </p>
+        <p><strong>In-app:</strong> Settings → About &amp; Support → Support email.</p>
+        <p><strong>Response time:</strong> first reply within 48 business hours (China mainland holidays excluded).</p>
+        <p><strong>Privacy requests:</strong> same inbox, subject line &quot;Privacy request&quot;. We respond within <strong>15 business days</strong> where required by PIPL.</p>
+        <p><strong>App Store Support URL:</strong><br />
+          <code>https://www.familymedvault.com/telog/support</code></p>
+      </div>
+      <p class="tip">We will <strong>never</strong> ask for your Tesla password, SMS codes, full OAuth refresh token, payment card numbers, or Apple ID password.</p>
+    </section>
+
+    <section id="s3">
+      <h2>3. In-app support paths</h2>
+      <table>
+        <thead>
+          <tr><th>Section</th><th>Item</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>General</td><td>中文 / English</td><td>UI language; legal links follow locale</td></tr>
+          <tr><td>Vehicle &amp; logging</td><td>My vehicles</td><td>List, rename, default vehicle</td></tr>
+          <tr><td>Vehicle &amp; logging</td><td>Notifications</td><td>Push: charge complete, low battery, etc.</td></tr>
+          <tr><td>Account</td><td>Membership</td><td>TeLog Plus trial, subscribe, feature comparison</td></tr>
+          <tr><td>Account</td><td>Privacy &amp; data</td><td>Export JSON, wipe local data, revoke cloud</td></tr>
+          <tr><td>About</td><td>About &amp; support</td><td>Email, FAQ links, Privacy Policy, EULA</td></tr>
+          <tr><td>About</td><td>Advanced settings</td><td>Tesla account, geofences, cloud collect, theme, import, MQTT</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="s4">
+      <h2>4. First launch &amp; consent</h2>
+      <ol>
+        <li><strong>Privacy &amp; local-first:</strong> first launch shows how data stays on-device by default and your rights.</li>
+        <li><strong>Link Tesla:</strong> authorize on <code>auth.tesla.cn</code> with your Mainland China account.</li>
+        <li><strong>Optional cloud:</strong> 24/7 cloud collection and backup require <strong>separate consent</strong> and usually an active TeLog Plus entitlement.</li>
+      </ol>
+    </section>
+
+    <section id="s5">
+      <h2>5. Tesla China Fleet API — authorized data</h2>
+      <p>
+        API access is obtained through the official portal
+        <a href="https://developer.tesla.cn/" target="_blank" rel="noopener noreferrer">developer.tesla.cn</a>
+        — not unofficial scraping. You authorize on <code>auth.tesla.cn</code>; the app calls
+        <code>fleet-api.prd.cn.vn.cloud.tesla.cn</code>. <strong>TeLog never receives your Tesla password.</strong>
+      </p>
+
+      <h3>5.1 Authorization chain</h3>
+      <ol>
+        <li><strong>Developer:</strong> registered app on developer.tesla.cn with OAuth <code>client_id</code> and Fleet API access.</li>
+        <li><strong>Owner:</strong> you consent on auth.tesla.cn with your Tesla account.</li>
+        <li><strong>Access:</strong> no Fleet API calls without your authorization.</li>
+      </ol>
+
+      <h3>5.2 Data flow</h3>
+      <ul>
+        <li><strong>Telemetry:</strong> app calls Fleet API <strong>directly</strong> (e.g. <code>vehicle_data</code>) — vehicle payloads are <strong>not proxied</strong> through our business servers.</li>
+        <li><strong>Token exchange only:</strong> OAuth code / refresh via a thin proxy on familymedvault.com (<code>client_secret</code> server-side only).</li>
+        <li><strong>Default storage:</strong> encrypted SQLite on your device.</li>
+        <li><strong>Optional upload:</strong> only after separate opt-in; copies may be stored in <strong>mainland China</strong>.</li>
+      </ul>
+
+      <h3>5.3 OAuth scopes (as shown on Tesla&apos;s consent screen)</h3>
+      <ul>
+        <li><code>openid</code>, <code>offline_access</code>, <code>user_data</code></li>
+        <li><code>vehicle_device_data</code>, <code>vehicle_location</code></li>
+        <li><code>vehicle_cmds</code> / <code>vehicle_charging_cmds</code> — only when you use vehicle commands</li>
+      </ul>
+
+      <h3>5.4 Data categories</h3>
+      <div class="fleet-box">
+        <ul>
+          <li>Vehicle identity, location &amp; driving, battery &amp; range, charging, vehicle state, climate</li>
+          <li>App annotations: geofence names, reverse-geocoded addresses, manual passport entries (local by default)</li>
+        </ul>
+      </div>
+      <p class="tip">Used for stats, battery health, PDF export — <strong>not for ads, not sold to third parties.</strong></p>
+    </section>
+
+    <section id="s6">
+      <h2>6. Data storage, export &amp; deletion</h2>
+      <ul>
+        <li><strong>Default:</strong> data stays in on-device encrypted SQLite.</li>
+        <li><strong>Export:</strong> Settings → Privacy &amp; data → Export all data (JSON).</li>
+        <li><strong>Delete local:</strong> wipe on-device data from the same screen (back up first).</li>
+        <li><strong>Revoke cloud:</strong> stop cloud collection and delete remote copies; <strong>local data is unaffected</strong>.</li>
+        <li><strong>Disconnect Tesla:</strong> Advanced settings; also revoke the third-party app in your Tesla account when appropriate.</li>
+      </ul>
+    </section>
+
+    <section id="s7">
+      <h2>7. TeLog Plus subscriptions</h2>
+      <p>Auto-renewable subscriptions billed through the <strong>Apple App Store</strong>. Group name: <strong>TeLog Plus</strong>.</p>
+      <ul>
+        <li>Monthly: <code>com.jchen.Telog.plus.monthly</code> (reference ¥18/mo)</li>
+        <li>Yearly: <code>com.jchen.Telog.plus.yearly</code> (reference ¥198/yr)</li>
+      </ul>
+
+      <h3>7.1 Free trial</h3>
+      <p><strong>14-day free trial</strong> for new subscribers (per App Store introductory offer). Cancel anytime in iOS Settings → Subscriptions before trial ends to avoid charges. After expiry, features revert to the <strong>Free</strong> tier.</p>
+
+      <h3>7.2 Entitlements</h3>
+      <div class="tier-box">
+        <p><strong>Local — always free:</strong> logging &amp; history, local analytics, PDF export, share posters.</p>
+        <p><strong>Cloud — Plus only:</strong> 24/7 cloud collection, nationwide percentile, cloud backup/sync, online share / passport QR, in-app family sharing, remote alerts. <strong>Paused when expired;</strong> local data is not deleted.</p>
+      </div>
+
+      <h3>7.3 Apple Family Sharing</h3>
+      <p>Both monthly and yearly plans support Apple Family Sharing per Apple&apos;s rules. Distinct from in-app vehicle sharing invites.</p>
+
+      <h3>7.4 Manage &amp; refunds</h3>
+      <ul>
+        <li>Manage: iOS Settings → Apple ID → Subscriptions.</li>
+        <li>Refunds: <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">reportaproblem.apple.com</a> — Apple decides; we can confirm subscription status only.</li>
+      </ul>
+    </section>
+
+    <section id="s8">
+      <h2>8. Optional cloud features</h2>
+      <ul>
+        <li><strong>Cloud collection:</strong> gap-fill when your phone is offline; separate consent; mainland China storage.</li>
+        <li><strong>Cloud backup / sync:</strong> encrypted copies; deleted on server when you turn the feature off.</li>
+        <li><strong>Family location share:</strong> separate risk disclosure before enabling.</li>
+      </ul>
+    </section>
+
+    <section id="s9">
+      <h2>9. Family sharing</h2>
+      <table>
+        <thead>
+          <tr><th>Type</th><th>Meaning</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Apple Family Sharing</strong></td><td>Household shares one TeLog Plus subscription entitlement</td></tr>
+          <tr><td><strong>In-app family sharing</strong></td><td>Plus member invites others to view authorized vehicle records / location</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="s10">
+      <h2>10. Support scope</h2>
+      <p><strong>We can help with:</strong> install/crashes, auth.tesla.cn OAuth, local data &amp; import, optional cloud, PDF/posters, geofences, notifications, MQTT, Plus status, privacy requests.</p>
+      <p><strong>Out of scope:</strong> roadside assistance, Tesla service, Apple hardware/Apple ID, professional inspection or valuation (reports are informational only).</p>
+    </section>
+
+    <section id="s11">
+      <h2>11. What to include in tickets</h2>
+      <ol>
+        <li>Steps to reproduce</li>
+        <li>iPhone model &amp; iOS version</li>
+        <li>TeLog version (Settings footer)</li>
+        <li>Tesla linked? Plus active? Cloud collection on?</li>
+        <li>Screenshots (redact full VIN/plates)</li>
+      </ol>
+    </section>
+
+    <section id="s12">
+      <h2>12. FAQ</h2>
+      <h3>Fleet API or sign-in errors?</h3>
+      <p>Use a Mainland China Tesla account on auth.tesla.cn; re-authorize if tokens expire.</p>
+      <h3>Where is data stored?</h3>
+      <p>On-device SQLite by default. Cloud upload requires separate consent.</p>
+      <h3>Delete data?</h3>
+      <p>Settings → Privacy &amp; data, or email us.</p>
+      <h3>Missing drives?</h3>
+      <p>Enable Plus cloud collection or import from TeslaFi / tesla-apiscraper.</p>
+      <h3>Refunds?</h3>
+      <p>Through Apple Report a Problem.</p>
+      <h3>After Plus expires?</h3>
+      <p><strong>Local data remains.</strong> Cloud features pause; timeline may show gaps.</p>
+    </section>
+
+    <section id="s13">
+      <h2>13. Third-party services</h2>
+      <p>Tesla China Fleet API, Apple App Store / StoreKit, Amap / OpenStreetMap geocoding, and services you configure (MQTT, Home Assistant).</p>
+    </section>
+
+    <section id="s14">
+      <h2>14. Compliance (People&apos;s Republic of China)</h2>
+      <div class="legal">
+        <ul>
+          <li>We follow applicable PIPL, Cybersecurity Law, and Data Security Law principles: lawful, legitimate, necessary, and good-faith processing.</li>
+          <li>Sensitive data (e.g. <strong>precise location, trip tracks</strong>) requires <strong>separate consent</strong> with clear notice.</li>
+          <li>Default processing occurs on your device; uploads, when any, are stored in <strong>mainland China</strong> as described in the Privacy Policy.</li>
+          <li>Not directed at children under 14; contact us to delete mistaken collection.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="s15">
+      <h2>15. Limitation of liability (individual developer)</h2>
+      <p>To the maximum extent permitted by law, TeLog is provided <strong>&quot;as is&quot;</strong> without warranties. No liability for indirect losses from API changes, network failures, or user error. Battery/resale reports are <strong>informational only</strong>, not professional advice. Non-waivable liability still applies where required by law.</p>
+    </section>
+
+    <section id="s16">
+      <h2>16. Related documents</h2>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use (EULA)</a></li>
+        <li>中文: <a href="../zh/support.html">技术支持（中文）</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>
+        Telog Archive (TeLog) · FamilyMedVault brand · Bundle ID: com.jchen.Telog<br />
+        Not affiliated with Tesla · Mainland China Tesla accounts (current release)<br />
+        Support: <a href="mailto:telog@familymedvault.com">telog@familymedvault.com</a>
+      </p>
+      <p>© 2026 TeLog. Tesla® is a trademark of Tesla, Inc.</p>
+    </footer>
+  </main>
+</body>
+</html>
