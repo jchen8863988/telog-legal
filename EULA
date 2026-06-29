@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>用户协议（EULA）· 特档案 TeLog</title>
+  <meta name="description" content="特档案 TeLog 用户协议与最终用户许可：服务范围、TeLog Plus 订阅、TeslaMate 参考、中国区 Fleet API 与高德合规、个人开发者免责。" />
+  <link rel="canonical" href="https://www.familymedvault.com/zh/telog/terms" />
+  <link rel="alternate" hreflang="zh-CN" href="https://www.familymedvault.com/zh/telog/terms" />
+  <link rel="alternate" hreflang="en" href="https://www.familymedvault.com/telog/terms" />
+  <style>
+    :root {
+      --fg: #0f172a; --muted: #64748b; --accent: #0f766e; --border: #e2e8f0;
+      --warn-bg: #fffbeb; --warn-border: #fde68a; --card-bg: #f0fdfa; --soft: #f8fafc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.7; color: var(--fg); margin: 0; background: #fff;
+    }
+    main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    .brand { font-size: 0.875rem; font-weight: 600; color: var(--accent); }
+    h1 { font-size: 1.875rem; margin: 0.5rem 0 0; line-height: 1.25; }
+    .updated { font-size: 0.875rem; color: var(--muted); margin-top: 0.5rem; }
+    .notice, .legal, .apple {
+      border-radius: 0.75rem; padding: 1rem 1.125rem; font-size: 0.875rem; margin: 1.75rem 0;
+    }
+    .notice { background: var(--warn-bg); border: 1px solid var(--warn-border); }
+    .legal { background: var(--soft); border: 1px solid var(--border); color: var(--muted); }
+    .apple { background: #f1f5f9; border: 1px solid #cbd5e1; }
+    section { margin-top: 2.25rem; }
+    h2 { font-size: 1.2rem; margin: 0 0 0.75rem; }
+    h3 { font-size: 1rem; margin: 1.125rem 0 0.35rem; }
+    p, li { font-size: 0.9375rem; }
+    ul, ol { padding-left: 1.25rem; }
+    li { margin: 0.4rem 0; }
+    a { color: var(--accent); }
+    .contact-box {
+      background: var(--card-bg); border: 1px solid #99f6e4;
+      border-radius: 0.75rem; padding: 1rem 1.125rem; font-size: 0.9375rem;
+    }
+    .tip, .ref-box {
+      background: var(--soft); border: 1px solid var(--border);
+      border-radius: 0.625rem; padding: 0.875rem 1rem; font-size: 0.875rem;
+      color: var(--muted); margin-top: 0.75rem;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.8125rem; margin-top: 0.75rem; }
+    th, td { border: 1px solid var(--border); padding: 0.5rem 0.625rem; text-align: left; vertical-align: top; }
+    th { background: var(--soft); font-weight: 600; }
+    code { font-size: 0.8125rem; background: #e2e8f0; padding: 0.1em 0.35em; border-radius: 4px; word-break: break-all; }
+    footer {
+      margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+      font-size: 0.75rem; color: var(--muted); line-height: 1.65;
+    }
+    .toc { font-size: 0.875rem; background: var(--soft); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1rem 1.25rem; }
+    .toc ol { margin: 0.5rem 0 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="brand">特档案 TeLog · FamilyMedVault 品牌旗下独立应用</p>
+    <h1>用户协议（最终用户许可协议）</h1>
+    <p class="updated">生效日期：2026 年 6 月 28 日 · 版本 1.0.0</p>
+
+    <p class="notice">
+      欢迎使用 <strong>特档案 TeLog</strong>（下称「TeLog」或「本 App」）。
+      本《用户协议》（下称「本协议」）是您与 TeLog <strong>独立个人开发者</strong>（下称「运营者」或「我们」）之间的法律协议。
+      下载、安装、注册、登录或使用本 App，即表示您已阅读、理解并同意受本协议及
+      <a href="privacy.html">《隐私政策》</a> 约束。
+      若您不同意，请勿使用本 App。
+    </p>
+
+    <nav class="toc" aria-label="目录">
+      <strong>目录</strong>
+      <ol>
+        <li><a href="#s1">协议主体与适用范围</a></li>
+        <li><a href="#s2">服务说明与开源参考（TeslaMate）</a></li>
+        <li><a href="#s3">中国合规与第三方接口</a></li>
+        <li><a href="#s4">许可授予与使用限制</a></li>
+        <li><a href="#s5">账户、授权与您的义务</a></li>
+        <li><a href="#s6">TeLog Plus 订阅条款</a></li>
+        <li><a href="#s7">内容与知识产权</a></li>
+        <li><a href="#s8">报告与信息免责声明</a></li>
+        <li><a href="#s9">隐私与数据</a></li>
+        <li><a href="#s10">终止</a></li>
+        <li><a href="#s11">保证免责与责任限制</a></li>
+        <li><a href="#s12">赔偿</a></li>
+        <li><a href="#s13">适用法律与争议解决</a></li>
+        <li><a href="#s14">协议变更</a></li>
+        <li><a href="#s15">Apple 相关条款</a></li>
+        <li><a href="#s16">联系我们</a></li>
+      </ol>
+    </nav>
+
+    <section id="s1">
+      <h2>1. 协议主体与适用范围</h2>
+      <ul>
+        <li><strong>应用名称：</strong>特档案 TeLog（App Store 显示名可能为「特档案TeLog」）</li>
+        <li><strong>Bundle ID：</strong><code>com.jchen.Telog</code></li>
+        <li><strong>运营者：</strong>独立个人开发者（非企业法人主体；以本 App 发布者与 <a href="mailto:telog@familymedvault.com">telog@familymedvault.com</a> 联系主体为准）</li>
+        <li><strong>品牌：</strong>FamilyMedVault 品牌旗下<strong>独立应用</strong>，与 FamilyMedVault 网站主产品无默认账户或数据绑定</li>
+        <li><strong>地域：</strong>本 App 面向<strong>中国大陆特斯拉车主</strong>设计与分发；您应在中国法律允许的范围内使用</li>
+        <li><strong>非特斯拉官方产品：</strong>TeLog 与 Tesla, Inc. 及其关联方无隶属、合作或背书关系</li>
+      </ul>
+    </section>
+
+    <section id="s2">
+      <h2>2. 服务说明与开源参考（TeslaMate）</h2>
+      <p>TeLog 向您提供（但不限于）：</p>
+      <ul>
+        <li>连接中国大陆特斯拉账号并记录行程、充电、车辆状态；</li>
+        <li>本机数据分析、统计面板、电池健康与保值/驾驶行为等参考报告；</li>
+        <li>PDF 导出、分享海报、车辆数字档案；</li>
+        <li>地理围栏、通知、可选 MQTT / Home Assistant 集成；</li>
+        <li>可选 TeLog Plus 会员：云端代采、备份同步、家庭共享、远程提醒等云端能力。</li>
+      </ul>
+
+      <div class="ref-box">
+        <h3 style="margin-top:0">2.1 与 TeslaMate 开源项目的关系</h3>
+        <p>
+          TeLog 在数据表设计、本地记录流程、统计概念与地理编码策略等方面，
+          <strong>参考</strong>开源项目 TeslaMate（<a href="https://github.com/teslamate-org/teslamate" target="_blank" rel="noopener noreferrer">teslamate-org/teslamate</a>）的<strong>公开代码与文档</strong>。
+        </p>
+        <ul>
+          <li>TeLog 为<strong>独立开发的 iOS 应用</strong>，不是 TeslaMate 官方客户端，也不要求您自行部署 TeslaMate 服务器。</li>
+          <li>TeLog 的中国区 Fleet API、高德地图、App Store 订阅、境内云端等能力为<strong>独立实现</strong>，由运营者单独运营与承担责任。</li>
+          <li>对开源组件的使用遵守相应开源许可证；TeLog 界面、增值报告与商业功能为运营者独立享有或合法使用之内容。</li>
+          <li>提及 TeslaMate 仅为技术来源说明，<strong>不构成任何官方关联</strong>。</li>
+        </ul>
+      </div>
+      <p class="tip">我们保留在不实质损害您已付费权益的前提下，调整、增加或下线非核心功能之权利；重大变更将合理通知。</p>
+    </section>
+
+    <section id="s3">
+      <h2>3. 中国合规与第三方接口</h2>
+
+      <h3>3.1 合规开发原则</h3>
+      <p>您理解并同意，TeLog 在中国大陆运营时遵循合法、正当、必要原则；默认本地存储车辆数据；敏感功能须单独同意。详见 <a href="privacy.html">《隐私政策》</a>。</p>
+
+      <h3>3.2 特斯拉中国区 Fleet API 正规链路</h3>
+      <p>车辆数据读取仅通过以下<strong>官方与约定路径</strong>实现：</p>
+      <table>
+        <thead>
+          <tr><th>环节</th><th>说明</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>开发者注册</td>
+            <td>运营者在 <a href="https://developer.tesla.cn/" target="_blank" rel="noopener noreferrer">developer.tesla.cn</a> 注册第三方应用并取得 Fleet API 资格</td>
+          </tr>
+          <tr>
+            <td>车主授权</td>
+            <td>您在 <code>auth.tesla.cn</code> 官方页面登录并同意 OAuth 权限</td>
+          </tr>
+          <tr>
+            <td>Token 换票</td>
+            <td>授权码 / refresh token 经 <code>familymedvault.com/api/telog/token</code> 代理换取 access token（<code>client_secret</code> 仅存服务端）</td>
+          </tr>
+          <tr>
+            <td>车辆数据</td>
+            <td>App <strong>直连</strong> <code>fleet-api.prd.cn.vn.cloud.tesla.cn</code>；车辆遥测<strong>不经</strong> TeLog 业务服务器中转（可选云端代采除外）</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>特斯拉可随时调整 API 可用性、字段与条款；我们不对第三方服务持续可用作保证，但将尽合理努力维持兼容。</p>
+
+      <h3>3.3 高德地图合规使用</h3>
+      <p>
+        地图展示与逆地理编码使用<strong>高德开放平台</strong>（<a href="https://lbs.amap.com/" target="_blank" rel="noopener noreferrer">lbs.amap.com</a>）
+        依法申请的 Key（Web JS API、Web 服务 API），遵守《测绘法》及平台协议。
+        坐标按国内要求转换后调用；可能存在的 OpenStreetMap Nominatim 境外回退见《隐私政策》。
+        您不得剥离、盗用或超范围使用地图 Key。
+      </p>
+    </section>
+
+    <section id="s4">
+      <h2>4. 许可授予与使用限制</h2>
+
+      <h3>4.1 许可授予</h3>
+      <p>
+        在您遵守本协议的前提下，运营者授予您一项<strong>个人的、可撤销的、不可转让的、非独占的、不可再许可的</strong>许可，
+        以在 Apple 许可的 iOS 设备上安装并使用本 App 当前版本及后续更新，仅供<strong>非商业个人用车档案</strong>之目的
+        （除非我们书面另有授权）。
+      </p>
+
+      <h3>4.2 禁止行为</h3>
+      <p>您不得：</p>
+      <ul>
+        <li>以任何非法方式使用本 App，或侵犯他人合法权益；</li>
+        <li>对 App 进行反编译、反汇编、破解、绕过订阅验证或技术保护措施（法律明确允许除外）；</li>
+        <li>利用本 App 从事危害网络安全、干扰特斯拉或高德等服务的行为；</li>
+        <li>批量抓取、转售本 App 数据或向未授权第三方提供商业性数据服务；</li>
+        <li>冒充特斯拉官方、运营者或其他主体；</li>
+        <li>上传恶意代码或利用本 App 传播违法信息；</li>
+        <li>将本 App 用于车队运营、保险定损、司法鉴定等<strong>专业用途</strong>而未取得相应资质（相关输出仅供参考，见第 8 节）。</li>
+      </ul>
+    </section>
+
+    <section id="s5">
+      <h2>5. 账户、授权与您的义务</h2>
+      <ul>
+        <li>您应使用<strong>本人合法拥有或经明确授权</strong>的特斯拉账号与 Apple ID；不得冒用他人账户。</li>
+        <li>您须妥善保管设备、Apple ID 及在本 App 内的操作权限；因您泄露或设备丢失导致的损失由您自行承担（我们有过错除外）。</li>
+        <li>连接车辆即表示您确认有权让本 App 读取该车辆 Fleet API 数据。</li>
+        <li>开启云端代采、家庭位置共享、MQTT 等功能前，您应阅读相应说明并自行评估风险。</li>
+        <li>您通过本 App 发送车辆指令（唤醒、预空调等）须自行确认安全与合规；我们对指令后果不承担责任（法律另有规定除外）。</li>
+        <li>您应遵守特斯拉用户协议、Apple 媒体服务条款、高德平台规则等第三方条款。</li>
+      </ul>
+    </section>
+
+    <section id="s6">
+      <h2>6. TeLog Plus 订阅条款</h2>
+      <p>TeLog 提供免费版与 <strong>TeLog Plus</strong> 自动续期订阅（通过 Apple App Store 结算）：</p>
+      <ul>
+        <li><strong>月付：</strong><code>com.jchen.Telog.plus.monthly</code>（参考价 ¥18/月）</li>
+        <li><strong>年付：</strong><code>com.jchen.Telog.plus.yearly</code>（参考价 ¥198/年）</li>
+        <li><strong>免费试用：</strong>新用户可享 14 天试用（以 App Store 显示为准）</li>
+      </ul>
+
+      <h3>6.1 自动续订</h3>
+      <p>
+        确认购买后，费用将从您的 Apple ID 账户扣取。订阅将<strong>自动续期</strong>，除非在当前订阅期结束前至少 24 小时在 iOS
+        「设置 → Apple ID → 订阅」中关闭自动续订。续期费用将在当前周期结束前 24 小时内扣取。
+        价格以 App Store 页面显示为准；我们可能对价格进行调整，调整对您下一续费周期生效。
+      </p>
+
+      <h3>6.2 试用与降级</h3>
+      <p>
+        试用结束前取消可避免转为付费。订阅到期或取消后，<strong>本地功能仍可使用</strong>；云端会员能力暂停，时间线可能出现未记录区间。
+        免费试用资格由 Apple 规则判定，我们不对 Apple 判定结果负责。
+      </p>
+
+      <h3>6.3 家人共享与切换方案</h3>
+      <p>
+        订阅支持 Apple「家人共享」（若 App Store 产品已开启）。同一订阅群组内可在月付/年付间切换，按 Apple 规则处理。
+        App 内「家庭共享」为车辆档案授权机制，与 Apple 家人共享不同，见 <a href="support.html">技术支持</a>。
+      </p>
+
+      <h3>6.4 退款</h3>
+      <p>
+        付款与退款由 <strong>Apple</strong> 处理。请通过 App Store「报告问题」或
+        <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">reportaproblem.apple.com</a> 申请。
+        我们可协助说明订阅状态，但<strong>无权直接退款</strong>。
+      </p>
+    </section>
+
+    <section id="s7">
+      <h2>7. 内容与知识产权</h2>
+      <ul>
+        <li>本 App 软件、界面设计、文档、商标「特档案 TeLog」及相关素材（除依法属于第三方者外）归运营者或权利人所有。</li>
+        <li>特斯拉、Tesla、Model 3/Y/S/X、TeslaMate 等名称与标识归各自权利人所有；本 App 中提及仅用于说明兼容性。</li>
+        <li><strong>您的数据：</strong>通过 Fleet API 取得并经您授权的车辆数据，其权益归属依特斯拉条款及适用法律确定；您保留对本地导出内容与自行输入内容的使用权。</li>
+        <li>您授予我们一项<strong>有限许可</strong>：仅为提供、维护、改进服务及履行法律义务而处理您的数据（范围见《隐私政策》）。</li>
+        <li>未经书面许可，不得复制、修改、传播本 App 或将其用于衍生商业产品。</li>
+      </ul>
+    </section>
+
+    <section id="s8">
+      <h2>8. 报告与信息免责声明</h2>
+      <p>
+        电池健康、保值分析、驾驶行为、全国分位、能耗归因、预估续航等均为<strong>基于 API 数据与算法的参考信息</strong>，
+        受传感器、API 字段、采样间隔等限制，<strong>不构成</strong>专业检测、维修建议、保险定损、司法鉴定或二手车交易承诺。
+        任何购车、卖车、维修、保险决策由您自行判断并承担后果。
+      </p>
+    </section>
+
+    <section id="s9">
+      <h2>9. 隐私与数据</h2>
+      <p>
+        个人信息处理规则以 <a href="privacy.html">《隐私政策》</a> 为准，并通过引用纳入本协议。
+        您有权导出、删除数据并撤回同意；默认本地存储，可选云端须单独同意。
+      </p>
+    </section>
+
+    <section id="s10">
+      <h2>10. 终止</h2>
+      <ul>
+        <li>您可随时停止使用、卸载本 App、删除数据并取消订阅。</li>
+        <li>若您违反本协议，我们可暂停或终止向您提供服务（包括云端能力），并在法律要求下配合监管。</li>
+        <li>终止后，依《隐私政策》处理您的数据；已支付的订阅费用不退还（Apple 退款政策除外）。</li>
+        <li>保证免责、责任限制、知识产权、赔偿、适用法律等条款在终止后继续有效。</li>
+      </ul>
+    </section>
+
+    <section id="s11">
+      <h2>11. 保证免责与责任限制</h2>
+      <div class="legal">
+        <p><strong>在法律允许的最大范围内：</strong></p>
+        <ul>
+          <li>本 App 按「<strong>现状</strong>」和「<strong>现有</strong>」基础提供，运营者不作任何明示或默示保证，包括但不限于适销性、特定用途适用性、不间断、无错误、数据完整准确。</li>
+          <li>因特斯拉 / Apple / 高德 API 变更、网络故障、设备故障、不可抗力、政策调整导致的服务中断或数据缺失，运营者不承担责任（已依法须承担除外）。</li>
+          <li>运营者对任何间接、附带、特殊、惩罚性或后果性损害（含利润、数据、商誉损失）不承担责任。</li>
+          <li>运营者对您承担的全部赔偿责任总额，以您就 TeLog Plus 在<strong>过去 12 个月内向 Apple 支付的费用</strong>为上限；若您仅使用免费版，则以 <strong>人民币 100 元</strong> 为上限（法律禁止限制的责任除外）。</li>
+        </ul>
+      </div>
+      <p>部分司法辖区不允许排除默示保证或限制责任；在此类情形下，上述限制在法定范围内适用。</p>
+    </section>
+
+    <section id="s12">
+      <h2>12. 赔偿</h2>
+      <p>
+        因您违反本协议、滥用服务、侵犯第三方权利或违反适用法律而引起第三方索赔、监管调查或损失的，
+        您应在法律允许范围内赔偿运营者因此遭受的合理损失与费用（含律师费），
+        除非损失完全由运营者故意或重大过失造成。
+      </p>
+    </section>
+
+    <section id="s13">
+      <h2>13. 适用法律与争议解决</h2>
+      <ul>
+        <li>本协议之订立、效力、解释与争议解决适用<strong>中华人民共和国大陆地区法律</strong>（不含冲突法）。</li>
+        <li>因本协议引起或与之相关的争议，双方应友好协商；协商不成的，任何一方可向<strong>运营者住所地有管辖权的人民法院</strong>提起诉讼。</li>
+        <li>您亦可依法向有管辖权的消费者权益保护部门或网信主管部门投诉。</li>
+      </ul>
+    </section>
+
+    <section id="s14">
+      <h2>14. 协议变更</h2>
+      <p>
+        我们可更新本协议并在本页注明生效日期。重大变更将通过 App 内提示等方式通知。
+        变更后继续使用视为接受；若不同意，请停止使用并删除数据。
+        App Store 已购版本之许可以您下载时适用的 Apple 规则及当时有效协议为准。
+      </p>
+    </section>
+
+    <section id="s15">
+      <h2>15. Apple 相关条款</h2>
+      <div class="apple">
+        <p>若您从 Apple App Store 获取本 App，您还确认并同意：</p>
+        <ol>
+          <li>本协议仅在您与运营者之间订立，<strong>与 Apple Inc. 无关</strong>；Apple 不对本 App 及其内容负责。</li>
+          <li>Apple 无义务提供本 App 的维护或支持；相关问题请联系 <a href="mailto:telog@familymedvault.com">telog@familymedvault.com</a>。</li>
+          <li>在适用法律允许的最大范围内，Apple 对本 App 不承担任何产品责任、合同履行或合规保证责任。</li>
+          <li>Apple 不负责处理您或第三方关于本 App 的知识产权侵权主张；此类通知请发至运营者邮箱。</li>
+          <li>Apple 及其子公司为本协议的<strong>第三方受益人</strong>；您接受本协议后，Apple 有权作为第三方受益人对您执行本协议。</li>
+          <li>您声明并保证：（a）不在受美国或联合国禁运的国家/地区使用；（b）不列入相关政府禁止或限制方名单；（c）遵守适用的出口管制法律。</li>
+          <li>订阅购买、续费、取消与退款受 <strong>Apple 媒体服务条款</strong> 及 App Store 规则约束。</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="s16">
+      <h2>16. 联系我们</h2>
+      <div class="contact-box">
+        <p><strong>运营者：</strong>TeLog 独立个人开发者</p>
+        <p><strong>邮箱：</strong><a href="mailto:telog@familymedvault.com">telog@familymedvault.com</a></p>
+        <p><strong>技术支持：</strong><a href="support.html">技术支持</a></p>
+        <p><strong>隐私政策：</strong><a href="privacy.html">隐私政策</a></p>
+        <p><strong>EULA 网址（App Store）：</strong><br />
+          <code>https://www.familymedvault.com/zh/telog/terms</code><br />
+          <span style="font-size:0.8125rem;color:var(--muted)">GitHub Pages：
+          <code>https://jchen8863988.github.io/telog-legal/zh/terms.html</code></span></p>
+      </div>
+    </section>
+
+    <p class="tip">
+      English: <a href="../en/terms.html">Terms of Use (EN)</a>
+    </p>
+
+    <footer>
+      <p>
+        特档案 TeLog · Bundle ID: com.jchen.Telog<br />
+        本应用非特斯拉官方出品 · 与 TeslaMate 无官方关联<br />
+        © 2026 TeLog. 保留一切权利。
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
