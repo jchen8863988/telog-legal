@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>云端代采数据处理说明 · 特档案 TeLog</title>
+  <meta name="description" content="特档案 TeLog 云端代采（7×24 连续记录）单独同意说明：采集内容、用途、境内存储与撤回方式。" />
+  <style>
+    :root {
+      --fg: #0f172a; --muted: #64748b; --accent: #0f766e; --border: #e2e8f0; --soft: #f8fafc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.7; color: var(--fg); margin: 0; background: #fff;
+    }
+    main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    .brand { font-size: 0.875rem; font-weight: 600; color: var(--accent); }
+    h1 { font-size: 1.75rem; margin: 0.5rem 0 0; line-height: 1.25; }
+    .updated { font-size: 0.875rem; color: var(--muted); margin-top: 0.5rem; }
+    .notice {
+      border-radius: 0.75rem; padding: 1rem 1.125rem; font-size: 0.875rem; margin: 1.75rem 0;
+      background: #f0fdfa; border: 1px solid #99f6e4;
+    }
+    section { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+    h2 { font-size: 1.125rem; margin: 0 0 0.35rem; }
+    .summary { font-size: 0.875rem; color: var(--muted); margin: 0 0 0.75rem; }
+    p, li { font-size: 0.9375rem; }
+    ul { padding-left: 1.25rem; }
+    footer {
+      margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+      font-size: 0.75rem; color: var(--muted);
+    }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="brand">特档案 TeLog · 云端代采</p>
+    <h1>云端代采数据处理说明</h1>
+    <p class="updated">版本 2 · 生效日期：2026 年 7 月 8 日</p>
+
+    <p class="notice">
+      本说明适用于您在 TeLog 中<strong>单独勾选同意</strong>开启的「云端代采（7×24 连续记录）」功能。
+      未开启时，车辆数据仅保存在您的 iPhone 本机。开启后，下列数据类别可能上传至<strong>中国境内</strong>加密服务器。
+    </p>
+
+    <section id="collection">
+      <h2>采集内容</h2>
+      <p class="summary">行车轨迹、位置、充电、电池状态</p>
+      <p>
+        行程与轨迹点、充电过程与功率曲线、车辆在线/休眠/行驶/充电状态、
+        电池电量与续航、里程表读数，以及关联的地理围栏与地址标注。
+      </p>
+      <p>数据类别（与 TeslaMate 等价表）：</p>
+      <ul>
+        <li>行程（drives）、轨迹点（positions）</li>
+        <li>充电过程（charging_processes）、充电点（charges）</li>
+        <li>车辆状态事件（state_events）、车辆档案（cars）</li>
+        <li>地理围栏（geofences）、地址（addresses）</li>
+      </ul>
+    </section>
+
+    <section id="purpose">
+      <h2>用途</h2>
+      <p class="summary">7×24 连续记录，补齐手机漏采片段</p>
+      <p>
+        在境内服务器持续采集并加密备份车辆数据，用于行程统计、充电分析、
+        电池健康与漏采片段补全；<strong>不用于广告定向或出售给第三方</strong>。
+      </p>
+    </section>
+
+    <section id="storage">
+      <h2>存储地与期限</h2>
+      <p class="summary">中国境内 · 加密 · 关闭即删除</p>
+      <p>数据存储于中国境内加密服务器；默认保留 365 天，关闭云端代采后立即删除云端副本。</p>
+    </section>
+
+    <section id="withdrawal">
+      <h2>撤回方式</h2>
+      <p class="summary">随时一键关闭，云端数据立即删除</p>
+      <p>
+        在「设置 → 高级设置」关闭「云端代采」开关，或进入「隐私与数据」点击「停止云端并删除远端副本」，
+        将停止上传并请求删除境内服务器上的副本。
+      </p>
+    </section>
+
+    <footer>
+      <p>完整隐私政策见 <a href="privacy.html">《隐私政策》</a> · 技术支持见 <a href="support.html">支持页面</a></p>
+      <p>联系：<a href="mailto:service@telog.cn">service@telog.cn</a></p>
+    </footer>
+  </main>
+</body>
+</html>

@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Terms of Use (EULA) · Telog Archive (TeLog)</title>
-  <meta name="description" content="TeLog Terms of Use and EULA: license, TeLog Plus subscriptions, TeslaMate reference, Tesla China Fleet API, Amap compliance." />
-  <link rel="canonical" href="https://www.familymedvault.com/telog/terms" />
-  <link rel="alternate" hreflang="en" href="https://www.familymedvault.com/telog/terms" />
-  <link rel="alternate" hreflang="zh-CN" href="https://www.familymedvault.com/zh/telog/terms" />
+  <title>Terms of Use (EULA) · TeLog</title>
+  <meta name="description" content="TeLog Terms of Use / EULA: Tesla official auth, on-device default, Cloud membership, PRC law baseline, indie developer disclaimers, Apple terms." />
+  <link rel="canonical" href="https://jchen8863988.github.io/telog-legal/en/terms.html" />
+  <link rel="alternate" hreflang="en" href="https://jchen8863988.github.io/telog-legal/en/terms.html" />
+  <link rel="alternate" hreflang="zh-CN" href="https://jchen8863988.github.io/telog-legal/zh/terms.html" />
   <style>
     :root {
       --fg: #0f172a; --muted: #64748b; --accent: #0f766e; --border: #e2e8f0;
@@ -39,14 +39,11 @@
       background: var(--card-bg); border: 1px solid #99f6e4;
       border-radius: 0.75rem; padding: 1rem 1.125rem; font-size: 0.9375rem;
     }
-    .tip, .ref-box {
+    .tip {
       background: var(--soft); border: 1px solid var(--border);
       border-radius: 0.625rem; padding: 0.875rem 1rem; font-size: 0.875rem;
       color: var(--muted); margin-top: 0.75rem;
     }
-    table { width: 100%; border-collapse: collapse; font-size: 0.8125rem; margin-top: 0.75rem; }
-    th, td { border: 1px solid var(--border); padding: 0.5rem 0.625rem; text-align: left; vertical-align: top; }
-    th { background: var(--soft); font-weight: 600; }
     code { font-size: 0.8125rem; background: #e2e8f0; padding: 0.1em 0.35em; border-radius: 4px; word-break: break-all; }
     footer {
       margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
@@ -58,31 +55,32 @@
 </head>
 <body>
   <main>
-    <p class="brand">Telog Archive (TeLog) · A FamilyMedVault app</p>
+    <p class="brand">TeLog · Independent indie developer app</p>
     <h1>Terms of Use (EULA)</h1>
-    <p class="updated">Effective: June 28, 2026 · Version 1.0.0</p>
+    <p class="updated">Effective: 8 July 2026 · Version 2.0.0 (replaces prior versions)</p>
 
     <p class="notice">
-      These Terms of Use (&quot;Terms&quot;) are a legal agreement between you and the <strong>individual developer</strong> of
-      <strong>Telog Archive (TeLog)</strong> (&quot;we&quot;, &quot;us&quot;).
-      By downloading, installing, or using TeLog, you agree to these Terms and our
-      <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use the app.
+      Welcome to <strong>TeLog</strong>. These Terms are a binding agreement between you and the
+      <strong>independent individual developer</strong> who operates TeLog (“Operator” / “we”).
+      By downloading, installing, signing in, or using the App, you agree to these Terms and the
+      <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use the App.
+      <strong>TeLog’s compliance baseline is mainland China. Overseas App Store availability does not change governing law or these Terms unless mandatory local law says otherwise.</strong>
     </p>
 
     <nav class="toc" aria-label="Contents">
       <strong>Contents</strong>
       <ol>
         <li><a href="#s1">Parties &amp; scope</a></li>
-        <li><a href="#s2">Service &amp; TeslaMate reference</a></li>
-        <li><a href="#s3">China compliance &amp; APIs</a></li>
+        <li><a href="#s2">Service description</a></li>
+        <li><a href="#s3">Data source &amp; on-device default</a></li>
         <li><a href="#s4">License &amp; restrictions</a></li>
         <li><a href="#s5">Your responsibilities</a></li>
-        <li><a href="#s6">TeLog Plus subscriptions</a></li>
-        <li><a href="#s7">Intellectual property</a></li>
+        <li><a href="#s6">Cloud membership</a></li>
+        <li><a href="#s7">IP</a></li>
         <li><a href="#s8">Informational reports</a></li>
         <li><a href="#s9">Privacy</a></li>
         <li><a href="#s10">Termination</a></li>
-        <li><a href="#s11">Disclaimers &amp; liability cap</a></li>
+        <li><a href="#s11">Disclaimer &amp; liability cap</a></li>
         <li><a href="#s12">Indemnity</a></li>
         <li><a href="#s13">Governing law</a></li>
         <li><a href="#s14">Changes</a></li>
@@ -94,129 +92,126 @@
     <section id="s1">
       <h2>1. Parties &amp; scope</h2>
       <ul>
-        <li><strong>App:</strong> Telog Archive (TeLog) · <code>com.jchen.Telog</code></li>
-        <li><strong>Operator:</strong> individual developer (contact: <a href="mailto:telog@familymedvault.com">telog@familymedvault.com</a>)</li>
-        <li><strong>Region:</strong> designed for Mainland China Tesla owners</li>
-        <li><strong>Not affiliated with Tesla, Inc.</strong></li>
+        <li>App: TeLog · Bundle ID <code>com.jchen.Telog</code></li>
+        <li>Operator: independent individual developer · <a href="mailto:service@telog.cn">service@telog.cn</a></li>
+        <li>Designed for mainland China Tesla owners; may also be listed overseas</li>
+        <li>Not Tesla official; no affiliation or endorsement</li>
       </ul>
     </section>
 
     <section id="s2">
-      <h2>2. Service &amp; TeslaMate reference</h2>
-      <p>TeLog provides vehicle logging, analytics, PDF export, optional cloud features, and TeLog Plus memberships.</p>
-      <div class="ref-box">
-        <p>
-          TeLog <strong>references</strong> the open-source project
-          <a href="https://github.com/teslamate-org/teslamate" target="_blank" rel="noopener noreferrer">TeslaMate</a>
-          for data models and local logging patterns. TeLog is an <strong>independent iOS app</strong>, not an official TeslaMate client.
-          China-specific features are separately implemented and operated by us.
-        </p>
-      </div>
+      <h2>2. Service description</h2>
+      <ul>
+        <li><strong>Free / on-device:</strong> live status, emergency &amp; lights, VIN/tires, recent drives/charges, basic stats, standard share, OTA history, TOU electricity settings, etc.</li>
+        <li><strong>Cloud membership:</strong> smart always-on logging &amp; full history, deep dashboards, battery health/value, attribution &amp; driving reports, Vehicle Passport, family share, expense, road-trip check-ins, geofence/parking, sync/backup, PDF/Excel, premium share, etc.</li>
+        <li>Send Feedback via system Mail to the Operator.</li>
+      </ul>
+      <p class="tip">Features may change without reducing paid entitlements improperly; material changes will be reasonably notified. App + App Store listings control.</p>
     </section>
 
     <section id="s3">
-      <h2>3. China compliance &amp; APIs</h2>
-      <h3>3.1 Tesla China Fleet API</h3>
-      <p>
-        Vehicle data is accessed only via: registration on
-        <a href="https://developer.tesla.cn/" target="_blank" rel="noopener noreferrer">developer.tesla.cn</a>;
-        your consent on <code>auth.tesla.cn</code>;
-        token exchange via <code>familymedvault.com/api/telog/token</code> (no telemetry in that step);
-        direct calls to <code>fleet-api.prd.cn.vn.cloud.tesla.cn</code> (optional cloud collection excepted).
-      </p>
-      <h3>3.2 Amap (Gaode)</h3>
-      <p>
-        Maps and reverse geocoding use Keys properly applied through
-        <a href="https://lbs.amap.com/" target="_blank" rel="noopener noreferrer">Amap Open Platform</a>,
-        complying with PRC map regulations. See the Privacy Policy for Nominatim fallback.
-      </p>
+      <h2>3. Data source &amp; on-device default</h2>
+      <ul>
+        <li>Vehicle data only via official Tesla authorization (OAuth / Fleet API)—no unofficial scraping.</li>
+        <li>Default storage is on your device; optional cloud needs separate consent.</li>
+        <li>Token exchange may use our HTTPS proxy; telemetry is fetched by the App directly in the default mode.</li>
+      </ul>
     </section>
 
     <section id="s4">
       <h2>4. License &amp; restrictions</h2>
-      <p>
-        We grant a personal, revocable, non-transferable, non-exclusive license to use TeLog on Apple-licensed iOS devices
-        for personal vehicle archiving. You may not reverse engineer, circumvent subscriptions, scrape/resell data illegally,
-        impersonate Tesla or us, or use TeLog for unlicensed professional services relying on our reports.
-      </p>
+      <p>We grant a personal, revocable, non-transferable, non-exclusive, non-sublicensable license to install and use the App on Apple-permitted devices for non-commercial personal vehicle archiving.</p>
+      <p>You may not: use unlawfully; reverse engineer or bypass subscription protections (except as mandatory law allows); disrupt Tesla/Apple/maps services; scrape/resell data commercially; impersonate Tesla/Operator; use outputs as professional appraisal/litigation evidence without credentials.</p>
     </section>
 
     <section id="s5">
       <h2>5. Your responsibilities</h2>
       <ul>
-        <li>Use only Tesla accounts and vehicles you are authorized to access</li>
-        <li>Secure your device and Apple ID</li>
-        <li>Read separate consents before enabling cloud collection or family location share</li>
-        <li>Vehicle commands (wake, climate, etc.) are at your own risk</li>
-        <li>Comply with Tesla, Apple, and Amap terms</li>
+        <li>Use Tesla and Apple accounts you own or are authorized to use.</li>
+        <li>Protect devices and credentials; losses from your disclosure/device loss are yours (unless we are at fault).</li>
+        <li>Connecting a vehicle confirms you may authorize Fleet API access for that vehicle.</li>
+        <li>Read disclosures before cloud / family sharing; assess risks yourself.</li>
+        <li>Vehicle commands must be used safely/lawfully; outcomes are your responsibility except where law says otherwise.</li>
+        <li>Comply with Tesla, Apple, Amap, and other third-party terms.</li>
       </ul>
     </section>
 
     <section id="s6">
-      <h2>6. TeLog Plus subscriptions</h2>
+      <h2>6. Cloud membership</h2>
       <ul>
-        <li>Products: <code>com.jchen.Telog.plus.monthly</code>, <code>com.jchen.Telog.plus.yearly</code></li>
-        <li><strong>Auto-renewal:</strong> charged to your Apple ID; renews unless canceled at least 24 hours before period end in iOS Subscriptions settings</li>
-        <li><strong>14-day trial</strong> for eligible new users (per App Store)</li>
-        <li><strong>After expiry:</strong> local features remain; cloud features pause</li>
-        <li><strong>Refunds:</strong> through Apple only (<a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">reportaproblem.apple.com</a>)</li>
-        <li>Apple Family Sharing supported when enabled on the product</li>
+        <li>Monthly <code>com.jchen.Telog.plus.monthly</code> (about ¥18/mo) · Yearly <code>com.jchen.Telog.plus.yearly</code> (about ¥198/yr)</li>
+        <li>14-day trial for new users if shown by App Store</li>
+        <li>Auto-renew unless cancelled ≥24h before period end in Apple ID → Subscriptions</li>
+        <li>After expiry: free on-device features remain; Cloud-only features pause; local data is not deleted</li>
+        <li>Apple Family Sharing (if enabled on the product) ≠ in-app family vehicle sharing</li>
+        <li>Refunds only via Apple; Operator cannot refund directly</li>
       </ul>
     </section>
 
     <section id="s7">
       <h2>7. Intellectual property</h2>
-      <p>App software and branding belong to us or licensors. Tesla/TeslaMate marks belong to their owners. You retain rights to your inputs; you grant us a limited license to process data as described in the Privacy Policy.</p>
+      <p>App software/UI/docs and TeLog marks (except third-party assets) belong to the Operator or licensors. Tesla marks belong to their owners. Your authorized vehicle data is governed by Tesla’s terms and law; you retain rights to exports and your own inputs. You grant us a limited license to process data to provide the service as described in the Privacy Policy.</p>
     </section>
 
     <section id="s8">
       <h2>8. Informational reports</h2>
-      <p>Battery health, resale estimates, driving scores, and similar outputs are <strong>informational only</strong>, not professional inspection, insurance, or legal advice.</p>
+      <p>Battery health/value, driving behavior, energy attribution, range estimates, etc. are <strong>informational</strong> only—not professional inspection, repair advice, insurance appraisal, litigation evidence, or transaction promises. Decisions are yours.</p>
     </section>
 
     <section id="s9">
       <h2>9. Privacy</h2>
-      <p>Processing of personal information is governed by our <a href="privacy.html">Privacy Policy</a>, incorporated by reference.</p>
+      <p>Personal information is governed by the <a href="privacy.html">Privacy Policy</a>, incorporated by reference. On-device default; optional cloud needs separate consent.</p>
     </section>
 
     <section id="s10">
       <h2>10. Termination</h2>
-      <p>You may stop using TeLog anytime. We may suspend service for violations. Survival clauses apply. Subscription fees are non-refundable except via Apple.</p>
+      <p>You may stop anytime (uninstall, wipe, cancel subscription). We may suspend/terminate for breach. Paid fees are non-refundable except via Apple. Survival: IP, disclaimers, liability limits, indemnity, governing law.</p>
     </section>
 
     <section id="s11">
-      <h2>11. Disclaimers &amp; liability cap</h2>
+      <h2>11. Disclaimer &amp; liability cap (indie developer)</h2>
       <div class="legal">
-        <p>TeLog is provided <strong>&quot;AS IS&quot;</strong> without warranties. We are not liable for indirect damages or third-party API outages. Total liability is capped at fees you paid for TeLog Plus in the prior 12 months, or CNY 100 if you only use the free tier, except where law prohibits.</p>
+        <p><strong>To the maximum extent permitted by law:</strong></p>
+        <ul>
+          <li>THE APP IS PROVIDED “AS IS” AND “AS AVAILABLE” WITHOUT WARRANTIES OF MERCHANTABILITY, FITNESS, UNINTERRUPTED OPERATION, ERROR-FREE PERFORMANCE, OR DATA ACCURACY.</li>
+          <li>We are not liable for Tesla/Apple/maps API changes, network/device failure, force majeure, or policy shifts (except where liability cannot be limited).</li>
+          <li>You accept the risk of local data loss if the device is lost/damaged without backup.</li>
+          <li>No liability for indirect, incidental, special, punitive, or consequential damages.</li>
+          <li>Our aggregate liability is capped at Cloud amounts you paid Apple in the prior 12 months; if free-only, capped at <strong>CNY 100</strong> (except non-excludable liability).</li>
+        </ul>
       </div>
     </section>
 
     <section id="s12">
       <h2>12. Indemnity</h2>
-      <p>You will indemnify us for claims arising from your misuse or violations, except where caused solely by our willful misconduct or gross negligence.</p>
+      <p>You will indemnify the Operator for reasonable losses arising from your breach, misuse, third-party IP claims caused by you, or illegal use—unless caused solely by the Operator’s willful misconduct or gross negligence.</p>
     </section>
 
     <section id="s13">
       <h2>13. Governing law</h2>
-      <p>These Terms are governed by the laws of the People&apos;s Republic of China (mainland). Disputes shall be submitted to courts with jurisdiction at the operator&apos;s place of residence after good-faith negotiation.</p>
+      <ul>
+        <li>Laws of mainland China (PRC), excluding conflict-of-laws rules.</li>
+        <li>Negotiate in good faith; else sue in a court with jurisdiction over the Operator’s domicile.</li>
+        <li>You may also complain to competent consumer or cyberspace authorities where available.</li>
+      </ul>
     </section>
 
     <section id="s14">
       <h2>14. Changes</h2>
-      <p>We may update these Terms with a new effective date. Material changes will be notified in-app. Continued use constitutes acceptance.</p>
+      <p>We may update these Terms with a new effective date. Material changes will be reasonably notified. Continued use means acceptance; otherwise stop and delete data.</p>
     </section>
 
     <section id="s15">
       <h2>15. Apple terms</h2>
       <div class="apple">
-        <p>If you obtained TeLog from the App Store, you agree that:</p>
         <ol>
-          <li>These Terms are between you and the developer only; <strong>Apple is not a party</strong></li>
-          <li>Apple has no maintenance or support obligation</li>
-          <li>Apple is not responsible for product claims, IP claims, or regulatory compliance of the app</li>
-          <li>Apple and its subsidiaries are <strong>third-party beneficiaries</strong> of these Terms</li>
-          <li>You comply with applicable export and sanctions laws</li>
-          <li>Subscriptions are subject to Apple&apos;s Media Services Terms</li>
+          <li>Agreement is between you and the Operator only—<strong>not Apple Inc.</strong></li>
+          <li>Apple has no obligation to provide maintenance/support; contact <a href="mailto:service@telog.cn">service@telog.cn</a>.</li>
+          <li>To the maximum extent permitted, Apple has no warranty/product liability for the App.</li>
+          <li>Apple is not responsible for IP infringement claims about the App; notify the Operator.</li>
+          <li>Apple and its subsidiaries are third-party beneficiaries entitled to enforce this EULA against you.</li>
+          <li>You are not in an embargoed country / on a denied-party list and will comply with export laws.</li>
+          <li>Subscriptions follow Apple Media Services Terms and App Store rules.</li>
         </ol>
       </div>
     </section>
@@ -224,19 +219,16 @@
     <section id="s16">
       <h2>16. Contact</h2>
       <div class="contact-box">
-        <p><strong>Email:</strong> <a href="mailto:telog@familymedvault.com">telog@familymedvault.com</a></p>
-        <p><strong>Support:</strong> <a href="support.html">Technical Support</a></p>
-        <p><strong>EULA URL:</strong><br />
-          <code>https://www.familymedvault.com/telog/terms</code><br />
-          <span style="font-size:0.8125rem;color:var(--muted)">GitHub Pages:
-          <code>https://jchen8863988.github.io/telog-legal/en/terms.html</code></span></p>
+        <p><strong>Email:</strong> <a href="mailto:service@telog.cn">service@telog.cn</a></p>
+        <p><strong>In-app:</strong> Settings → About &amp; support → Send feedback</p>
+        <p><strong>URL:</strong> <code>https://jchen8863988.github.io/telog-legal/en/terms.html</code></p>
       </div>
     </section>
 
-    <p>中文: <a href="../zh/terms.html">用户协议（中文）</a></p>
+    <p class="tip">中文：<a href="../zh/terms.html">用户协议</a></p>
 
     <footer>
-      <p>Telog Archive (TeLog) · Not affiliated with Tesla · © 2026 TeLog</p>
+      <p>TeLog · com.jchen.Telog · Not Tesla official · On-device by default · service@telog.cn · © 2026 TeLog</p>
     </footer>
   </main>
 </body>

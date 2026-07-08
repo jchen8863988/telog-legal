@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cloud Collection Disclosure · TeLog</title>
+  <meta name="description" content="TeLog optional cloud collection (24/7 recording): what is collected, why, where stored, and how to withdraw." />
+  <style>
+    :root {
+      --fg: #0f172a; --muted: #64748b; --accent: #0f766e; --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7; color: var(--fg); margin: 0; background: #fff;
+    }
+    main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    .brand { font-size: 0.875rem; font-weight: 600; color: var(--accent); }
+    h1 { font-size: 1.75rem; margin: 0.5rem 0 0; }
+    .updated { font-size: 0.875rem; color: var(--muted); margin-top: 0.5rem; }
+    .notice {
+      border-radius: 0.75rem; padding: 1rem 1.125rem; font-size: 0.875rem; margin: 1.75rem 0;
+      background: #f0fdfa; border: 1px solid #99f6e4;
+    }
+    section { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+    h2 { font-size: 1.125rem; margin: 0 0 0.35rem; }
+    .summary { font-size: 0.875rem; color: var(--muted); margin: 0 0 0.75rem; }
+    p, li { font-size: 0.9375rem; }
+    ul { padding-left: 1.25rem; }
+    footer {
+      margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+      font-size: 0.75rem; color: var(--muted);
+    }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="brand">TeLog · Cloud collection</p>
+    <h1>Cloud collection data processing notice</h1>
+    <p class="updated">Version 2 · Effective: 8 July 2026</p>
+
+    <p class="notice">
+      This notice applies when you <strong>separately opt in</strong> to TeLog cloud collection (24/7 recording).
+      When off, vehicle data stays on your iPhone only. When on, the categories below may be uploaded to
+      <strong>encrypted servers in mainland China</strong>.
+    </p>
+
+    <section id="collection">
+      <h2>What we collect</h2>
+      <p class="summary">Trips, location, charging, battery state</p>
+      <p>
+        Trip routes and position points, charging sessions and power curves, vehicle online/sleep/drive/charge state,
+        battery level and range, odometer readings, and related geofences and address labels.
+      </p>
+      <ul>
+        <li>drives, positions</li>
+        <li>charging_processes, charges</li>
+        <li>state_events, cars</li>
+        <li>geofences, addresses</li>
+      </ul>
+    </section>
+
+    <section id="purpose">
+      <h2>Purpose</h2>
+      <p class="summary">24/7 recording to fill gaps when the phone misses data</p>
+      <p>
+        Continuous encrypted backup for trip stats, charging analysis, battery health, and gap-fill.
+        <strong>Not used for ad targeting or sold to third parties.</strong>
+      </p>
+    </section>
+
+    <section id="storage">
+      <h2>Storage & retention</h2>
+      <p class="summary">China · encrypted · deleted when you turn off</p>
+      <p>Stored on encrypted servers in China; default retention 365 days; remote copy deleted when cloud collection stops.</p>
+    </section>
+
+    <section id="withdrawal">
+      <h2>How to withdraw</h2>
+      <p class="summary">Turn off anytime; remote copy deletion requested</p>
+      <p>
+        Turn off cloud collection in Settings → Advanced, or use Privacy &amp; data → Stop cloud &amp; delete remote copy.
+      </p>
+    </section>
+
+    <footer>
+      <p>See also <a href="privacy.html">Privacy policy</a> · <a href="support.html">Support</a></p>
+      <p>Contact: <a href="mailto:service@telog.cn">service@telog.cn</a></p>
+    </footer>
+  </main>
+</body>
+</html>
